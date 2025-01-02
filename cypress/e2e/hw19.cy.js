@@ -79,6 +79,7 @@ describe('Test the Registration form', () => {
                 cy.get('[class="btn btn-primary"]').click({force:true});
                 cy.get('input#signupEmail.form-control.ng-invalid.ng-dirty.is-invalid.ng-touched').should('have.css', 'border-color', 'rgb(220, 53, 69)'); 
             });
+        });
 
         context('Field "Password" validations', () => {
         
@@ -99,7 +100,8 @@ describe('Test the Registration form', () => {
                 cy.get('[class="btn btn-primary"]').click({force:true});
                 cy.get('input#signupPassword.form-control.ng-invalid.ng-dirty.is-invalid.ng-touched').should('have.css', 'border-color', 'rgb(220, 53, 69)'); 
             });
-
+        });
+       
         context('Field "Re-enter Password" validations', () => {
         
             it('Wrong data - "Passwords do not match"', () => {
@@ -119,6 +121,7 @@ describe('Test the Registration form', () => {
                 cy.get('[class="btn btn-primary"]').click({force:true});
                 cy.get('input#signupRepeatPassword.form-control.ng-invalid.ng-dirty.is-invalid.ng-touched').should('have.css', 'border-color', 'rgb(220, 53, 69)'); 
            });
+        });
 
         context('Button "Register" validations', () => {
 
@@ -170,9 +173,7 @@ describe('Test the Registration form', () => {
             
     });
 });
-});
-});
-})
+
 
 
 

@@ -4,7 +4,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       },
-    baseUrl: 'https://example.cypress.io',
+    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space/',
     retries: {
       runMode: 1,
       openMode: 1
