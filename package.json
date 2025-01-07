@@ -1,0 +1,20 @@
+{
+  "name": "cypress_repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:config": "npx cypress run  --config-file \"./cypress.test1.config.js\"",
+    "test:config2": "npx cypress open  --config-file \"./cypress.test2.config.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "cypress_repo"
+  },
+  "author": "Kateryna Naimark",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
