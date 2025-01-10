@@ -6,7 +6,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
       },
-    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space/',
+    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space',
     // retries: {
     //   runMode: 1,
     //   openMode: 1
@@ -16,6 +16,7 @@ module.exports = defineConfig({
     viewportWidth: 1920,
     video: true,
     screenshotOnRunFailure: true,
+    failOnStatusCode: false,
     env: {
       MAIN_USER_EMAIL: "kateryna.naimark+2@gmail.com",
       MAIN_USER_PASSWORD: "Kn1234567",

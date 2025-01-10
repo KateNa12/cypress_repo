@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:config": "npx cypress run  --config-file \"./cypress.test1.config.js\"",
+    "test:config": "npx cypress open  --config-file \"./cypress.test1.config.js\"",
     "test:config2": "npx cypress open  --config-file \"./cypress.test2.config.js\""
   },
   "repository": {
@@ -16,5 +16,8 @@
   "devDependencies": {
     "cypress": "^13.16.1",
     "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2"
   }
 }
